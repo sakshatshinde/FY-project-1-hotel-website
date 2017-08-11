@@ -228,6 +228,7 @@ nav a:focus {
 
 .home-hero {
     background-image:url(../FY-project-1-hotel-website/assets/t2.gif);
+    backgorund-image:url(https://github.com/sakshatshinde/FY-project-1-hotel-website/blob/master/assets/t2.gif?raw=true); /* Backup link*/
     background-size: auto;
     background-position: center;
     padding: 6em 0;
