@@ -3,7 +3,9 @@ url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
 *{
     box-sizing: border-box;
+    transition: all ease-in-out 250ms;
 }
+
 body{
     margin:0;
     font-family: 'Raleway',sans-serif;
@@ -16,16 +18,91 @@ img{
 }
 
 .container{
-    width:95%;
+    width:100%;
+    max-width: 70em;
     margin: 0 auto;
+    margin-left: 1.2rem;
+    margin-right: auto;
 }
+
+.clearfix::after,
+section::after,
+footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Col system
+====================> */
+
+[class^=col-] {
+    width: 100%;
+    margin-top:1em;
+}
+
+[class^=col-]:first-child{
+   
+    margin-top: 0;
+ }
+
+ .col-1{
+     width: 33.333334%;
+     float: left;
+ }
+
+@media(min-width: 40rem){
+
+    [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+    }
+
+    [class^=col-]:first-child{
+    padding-left: 0;
+ }
+
+    [class^=col-]:last-child{
+    padding-right: 0;
+ }
+ 
+ .col-1{
+
+    width:16.6666%;
+
+ }
+
+ .col-3{
+ 
+    width: 50%;
+
+ }
+
+}
+
 
 /* TYPOGRAPHY
 ======================== */
+p{
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+p:last-of-type{
+    margin-bottom:0;
+}
+h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
 
 .title{
     font-size: 2.5rem;
     margin-bottom: 1.5em;
+    font-weight: 900;
+    margin-top: 1em;
 }
 
 .title span {
@@ -34,9 +111,24 @@ img{
     font-size: .9em;
 }
 
+.title-cta {
+    margin: 0 0 .5em;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 @media (min-width: 60rem){
     .title {
         font-size: 3.7rem;
+    }
+
+    p{
+        font-size:  1.6rem;
+        line-height: 1.6;
     }
 }
 
@@ -52,6 +144,12 @@ img{
     padding: .5em 1.75em;
 }
 
+@media (min-width: 60rem){
+    .button{
+        font-size: 1.5rem;
+    }
+}
+
 .button-accent {
     color: #00ff6c;
     border-color: #00ff6c;
@@ -61,13 +159,25 @@ img{
 .button-accent:focus {
     background: #00ff6c;
     color: #232323;
+    border-color: #00ff6c;
 }
 
-@media (min-width: 60rem){
-    .button{
-        font-size: 1.5rem;
-    }
+.button-dark {
+    color: #232323;
+    border-color: #232323;
 }
+
+.button-dark:hover,
+.button-dark:focus {
+    background: #232323;
+    color: #00ff6c;
+}
+
+.button-small{
+    font-size:.7rem;
+    font-weight: 700;
+}
+
 /* HEADER
 ======================== */
 
@@ -82,6 +192,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: right;
 }
 nav li{
     display: inline-block;
@@ -100,7 +211,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #ddd;
+    color: #00ff6c;
 }
 
 @media (min-width: 60rem){
@@ -113,16 +224,148 @@ nav a:focus {
 =================== */
 
 .home-hero {
-    background-image: url(http://www.guibingzhuche.com/data/out/36/904013.jpg);
+    background-image:url(../FY-project-1-hotel-website/assets/t2.gif);
     background-size: cover;
     background-position: center;
-    padding: 10em 0;
+    padding: 6em 0;
     color: #FFF;
 }
 
 @media(min-width:60rem){
     .home-hero{
-        height: 100vh;
+        height: 115vh;
         padding-top: 35vh;
     }
+}
+
+.home-about-textbox {
+
+    background-color: #232323;
+    padding: 3em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #fff;
+    position: relative;
+
+}
+
+.home-about-textbox h1 {
+    color: #232323;
+    position: absolute;
+    top: .75em;
+    background: #00ff6c;
+    padding: 0 .145em;
+    left: 50%;
+    trasnfrom: translateX(-50%);
+}
+
+@media(min-width: 25rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+.home-about-textbox h1 {
+    top: .9em;
+    padding: 0 .325em;
+}
+}
+
+@media(min-width: 60rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+.home-about-textbox h1 {
+    top: .4em;
+    padding: 0 .6em;
+
+}
+
+}
+.home-about-textbox{
+    width: 100vw;
+    margin-left: -3%;
+    text-align: left; 
+    box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+    padding: 7em;
+
+}
+
+/* Portfolio */
+ 
+.portfolio{
+    
+    margin: 3em 0 0;
+
+}
+
+.port-item{
+
+    margin: 0;
+    position: relative;
+
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-desc {
+
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color:white;
+    background: rgba(0,0,0,.75);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.port-desp p{
+    margin: 1em;
+}
+ @media(min-width:37rem){
+    .port-item{
+        width: 50%;
+        float:left;
+    }
+ }
+@media(min-width:60rem){
+    .port-item {
+        width: 33.3334%;
+    overflow: hidden;
+    }
+
+    .port-desc {
+        transform: translateX(150%);
+    }
+
+    .port-item:hover .port-desc {
+        transform:translateY(0%);
+    }
+    }
+
+
+
+
+/* CTA (Action)
+====================> */
+
+.cta {
+    background-color: #00ff6c;
+    padding: 5em 0;
+}
+
+/* Footer 
+====================> */
+
+footer{
+    background: #232323;
+    color: #fff;
+    padding: 5em;
+    text-align: left;
 }
