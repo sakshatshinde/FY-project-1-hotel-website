@@ -288,7 +288,7 @@ nav a:focus {
 
 }
 .home-about-textbox{
-    width: 100vw;
+    width: 100.5%;
     margin-left: -3%;
     text-align: left;
     box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
@@ -313,19 +313,19 @@ nav a:focus {
 
 .port-item img {
     display: block;
+
 }
 
 .port-desc {
 
     position: absolute;
     z-index: 100;
-    bottom: 0em;
-    left: 0em;
-    right: 0em;
+    bottom: 3em;
+    left: 3em;
+    right: 3em;
     color:white;
     background: rgba(0,0,0,.75);
     padding-bottom: 1em;
-    padding-top: 1em;
 }
 
 .port-desp p{
@@ -372,3 +372,78 @@ footer{
     padding: 5em;
     text-align: left;
 }
+/*
+Unusable part
+=======================================================
+
+<section class="portfolio">
+    <h1> What kind of experience would you have with us? </h1>
+
+    <!-- portfolio item #1 -->
+
+    <figure class="port-item">
+        <img src="assets/portfolio-04.jpg" alt="Portfolio item">
+        <figcaption class="port-desc">
+            <p> Project Title </p>
+            <a href="" class="button button-accent button-small">Project Details
+            </a>
+         </figcaption>
+    </figure>
+
+
+     <!-- portfolio item #2 -->
+
+    <figure class="port-item">
+        <img src="https://www.oberoihotels.com/images/home/alzorah.jpg" alt="Portfolio item">
+        <figcaption class="port-desc">
+            <p> Project Title </p>
+            <a href="" class="button button-accent button-small">Project Details
+            </a>
+         </figcaption>
+    </figure>
+
+     <!-- portfolio item #3 -->
+
+    <figure class="port-item">
+        <img src="https://www.goway.com/media/cache/8a/b4/8ab41f7f6f40f5824519c8835115fd56.jpg" alt="Portfolio item">
+        <figcaption class="port-desc">
+            <p> Project Title </p>
+            <a href="" class="button button-accent button-small">Project Details
+            </a>
+         </figcaption>
+    </figure>
+
+     <!-- portfolio item #4 -->
+
+    <figure class="port-item">
+        <img src="http://www.swantour.com/agra-hotels/gifs/trident-agra.jpg" alt="Portfolio item">
+        <figcaption class="port-desc">
+            <p> Project Title </p>
+            <a href="" class="button button-accent button-small">Project Details
+            </a>
+         </figcaption>
+    </figure>
+
+     <!-- portfolio item #5 -->
+
+    <figure class="port-item">
+        <img src="https://www.oberoihotels.com/images/hotels-in-mumbai/gallery/large/interior-view.jpg" alt="Portfolio item">
+        <figcaption class="port-desc">
+            <p> Project Title </p>
+            <a href="" class="button button-accent button-small">Project Details
+            </a>
+         </figcaption>
+    </figure>
+
+     <!-- portfolio item #6 -->
+
+    <figure class="port-item">
+        <img src="https://www.oberoihotels.com/images/hotels-in-delhi/restaurants/patisserie-delicatessen-large.jpg" alt="Portfolio item">
+        <figcaption class="port-desc">
+            <p> Project Title </p>
+            <a href="" class="button button-accent button-small">Project Details
+            </a>
+         </figcaption>
+    </figure>
+</section>
+*/
