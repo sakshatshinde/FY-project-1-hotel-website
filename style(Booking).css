@@ -18,8 +18,9 @@ body{
 }
 
 img{
-    max-width: 40%;
+    max-width: 25%;
     height: auto;
+    margin-top: 0.5rem;
 }
 
 .container{
@@ -111,6 +112,7 @@ h1{
     margin-bottom: 1.5em;
     font-weight: 900;
     margin-top: 1em;
+
 }
 
 .title span {
@@ -193,11 +195,12 @@ header {
     position: absolute;
     left: 0;
     right: 1;
-    margin: 2.5em;
+    margin: 1rem;
 }
 
 nav ul {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 60rem;
     padding: 0;
     list-style: none;
     float: right;
@@ -232,29 +235,24 @@ nav a:focus {
 =================== */
 
 .home-hero {
-    background-color: #7E57C2;
+    background-image: url(http://www.androidguys.com/wp-content/uploads/2016/05/Poly-Lakeside.jpg);
     background-size: auto;
     background-position: center;
     padding: 6em 0;
-    color: #FFF;
-}
-
-@media(min-width:60rem){
-    .home-hero{
-        height: 115vh;
-        padding-top: 35vh;
-    }
+    color: #fff;
 }
 
 .home-about-textbox {
 
-    background-color: #42A5F5;
+    background-image: url(http://wallpapercave.com/wp/6fVBDMW.jpg);
+    background-position: center;
+    background-size: 100%;
     padding: 3em;
     width: 100vw;
     margin-left: 2.5%;
-    outline: 2px solid #FFC107;
+    outline: 2px solid #1DE9B6;
     outline-offset: -2.5em;
-    color: #FFC107;
+    color: #FFF;
     position: relative;
 
 }
@@ -263,8 +261,7 @@ nav a:focus {
     color: #232323;
     position: absolute;
     top: .75em;
-    background: #FFC107;
-    padding: 0 .145em;
+    background: #64FFDA;
     left: 50%;
     trasnfrom: translateX(-50%);
 }
@@ -343,19 +340,21 @@ nav a:focus {
     }
  }
 @media(min-width:60rem){
-    .port-item {
-        width: 33.3334%;
-    overflow: hidden;
-    }
 
-    .port-desc {
-        transform: translateX(150%);
-    }
+        .port-item {
+            width: 33.3334%;
+        overflow: hidden;
+        }
 
-    .port-item:hover .port-desc {
-        transform:translateY(0%);
-    }
-    }
+        .port-desc {
+            transform: translateX(150%);
+        }
+
+        .port-item:hover .port-desc {
+            transform:translateY(0%);
+        }
+
+}
 
 
 
@@ -364,18 +363,27 @@ nav a:focus {
 ====================> */
 
 .cta {
-    background-color: #00ff6c;
+    background-image:url(https://images2.alphacoders.com/860/thumb-1920-860481.png);
+    background-position: extremeLeft;
+    background-size: 100%;
     padding: 5em 0;
+    color: #fff;
+    
 }
 
 /* Footer
 ====================> */
 
 footer{
-    background: #232323;
-    color: #fff;
+    background-image: url(http://www.magic4walls.com/wp-content/uploads/2014/05/cartoon-minimalist-wallpaper-art-vector-garfield-smile-yellow-background.jpg);
+    color: #232323;
+    background-position: center;
+    background-size: 4%;
     padding: 5em;
     text-align: left;
+    
 }
+
+
 
 /* A property of Sakshat Shinde */
