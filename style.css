@@ -13,8 +13,9 @@ body{
 }
 
 img{
-    max-width: 40%;
+    max-width: 15%;
     height: auto;
+    margin-top: 0.5rem;
 }
 
 .container{
@@ -188,15 +189,15 @@ header {
     position: absolute;
     left: 0;
     right: 1;
-    margin: 2.5em;
+    margin: 1rem;
 }
 
 nav ul {
-    margin-left: 12;
+    margin-top: 0;
+    margin-left: 45rem;
     padding: 0;
     list-style: none;
     float: right;
-    overflow: hidden;
     
 }
 nav li{
@@ -229,9 +230,8 @@ nav a:focus {
 =================== */
 
 .home-hero {
-    background-image:url(../FY-project-1-hotel-website/assets/t2.gif);
-    backgorund-image:url(https://github.com/sakshatshinde/FY-project-1-hotel-website/blob/master/assets/t2.gif?raw=true); /* Backup link*/
-    background-size: auto;
+    background-image:url(../FY-project-1-hotel-website/assets/homehero/heaven.gif);
+    background-size: 100%;
     background-position: center;
     padding: 6em 0;
     color: #FFF;
