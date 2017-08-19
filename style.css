@@ -246,8 +246,8 @@ nav a:focus {
 
 .home-about-textbox {
 
-    background-color: #232323;
-    padding: 3em;
+    background-image: url(http://www.imgbase.info/images/safe-wallpapers/miscellaneous/comics/20357_comics_minimal.jpg);    
+    background-position: center;
     width: 100vw;
     margin-left: 2.5%;
     outline: 2px solid #00ff6c;
@@ -362,7 +362,9 @@ nav a:focus {
 ====================> */
 
 .cta {
-    background-color: #00ff6c;
+    background-image: url(http://www.imgbase.info/images/safe-wallpapers/miscellaneous/comics/20366_comics_minimal_joker_minimal.jpg);
+    background-position: center;
+    
     padding: 5em 0;
 }
 
@@ -370,7 +372,10 @@ nav a:focus {
 ====================> */
 
 footer{
-    background: #232323;
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     color: #fff;
     padding: 5em;
     text-align: left;

@@ -112,17 +112,20 @@ h1{
     margin-bottom: 1.5em;
     font-weight: 900;
     margin-top: 1em;
-
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .title span {
     font-weight: 300;
     display: block;
     font-size: .9em;
+    -webkit-text-stroke-width: 0px;
 }
 
 .title-cta {
     margin: 0 0 .5em;
+    -webkit-text-stroke-width: 0px; /*overriding the above webkit commands */
 }
 
 .unstyled-list {
@@ -235,8 +238,8 @@ nav a:focus {
 =================== */
 
 .home-hero {
-    background-image: url(http://www.androidguys.com/wp-content/uploads/2016/05/Poly-Lakeside.jpg);
-    background-size: auto;
+    background-image: url(https://wallpapersite.com/images/pages/pic_w/1255.jpg); /* Background Home hero*/
+    background-size: 100%;
     background-position: center;
     padding: 6em 0;
     color: #fff;
@@ -244,15 +247,16 @@ nav a:focus {
 
 .home-about-textbox {
 
-    background-image: url(http://wallpapercave.com/wp/6fVBDMW.jpg);
-    background-position: center;
-    background-size: 100%;
+    background: #fffbd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* Above bg code can be copied from "uigradient" just google it */ 
     padding: 3em;
     width: 100vw;
     margin-left: 2.5%;
     outline: 2px solid #1DE9B6;
     outline-offset: -2.5em;
-    color: #FFF;
+    color: #001F17;
     position: relative;
 
 }
@@ -363,7 +367,7 @@ nav a:focus {
 ====================> */
 
 .cta {
-    background-image:url(https://images2.alphacoders.com/860/thumb-1920-860481.png);
+    background-image:url(https://pre10.deviantart.net/ffc4/th/pre/i/2017/215/6/5/rider_of_red__fate_apocrypha__minimalist_by_fidelx-dbikddr.png);
     background-position: extremeLeft;
     background-size: 100%;
     padding: 5em 0;

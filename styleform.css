@@ -118,5 +118,23 @@ ul{
     .company-info h3, .company-info ul{
         text-align: left;
     }
+        
+    
+.homebutton button{
+    margin-top: 2em;
+    background: #c9e6ff;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+    font-family: Raleway;
+    font-size: 1em;
+}
 
+.homebutton button:hover, .contact form button:focus{
+        background: #92bde7;
+        color: black;
+        outline: 0;
+        transition: background-color 1s ease-out;
+    }
 }
