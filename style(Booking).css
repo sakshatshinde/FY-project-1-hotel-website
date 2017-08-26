@@ -112,8 +112,7 @@ h1{
     margin-bottom: 1.5em;
     font-weight: 900;
     margin-top: 1em;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    
 }
 
 .title span {
@@ -198,6 +197,25 @@ header {
     position: absolute;
     left: 0;
     right: 1;
+    margin: .5rem;
+}
+
+nav ul {
+    margin-top: .2rem;
+    margin-left: 63em;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+    /*
+
+    Aliignment issues
+    
+header {
+    position: absolute;
+    left: 0;
+    right: 1;
     margin: 1rem;
 }
 
@@ -207,7 +225,8 @@ nav ul {
     padding: 0;
     list-style: none;
     float: right;
-}
+}*/
+
 nav li{
     display: inline-block;
     margin: 1em;
@@ -238,7 +257,7 @@ nav a:focus {
 =================== */
 
 .home-hero {
-    background-image: url(https://wallpapersite.com/images/pages/pic_w/1255.jpg); /* Background Home hero*/
+    background-image: url(../assets/bookingheader.png); /* Background Home hero*/
     background-size: 100%;
     background-position: center;
     padding: 6em 0;
@@ -247,16 +266,17 @@ nav a:focus {
 
 .home-about-textbox {
 
-    background: #fffbd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     /* Above bg code can be copied from "uigradient" just google it */ 
     padding: 3em;
     width: 100vw;
     margin-left: 2.5%;
     outline: 2px solid #1DE9B6;
     outline-offset: -2.5em;
-    color: #001F17;
+    color: #FFF;
     position: relative;
 
 }

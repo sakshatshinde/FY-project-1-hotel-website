@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "FY-project-1-hotel-website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -24,38 +24,40 @@
                 </ul>
             </div>
             <div class="contact">
-                <h3><u>Email Us</u></h3>
-                <form action="connect.php">
+                <h3><u>Booking Form</u></h3>
+                <div class="alert">Your reqeust has been submitted</div>
+                <form id="contactForm">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="name" required>
                     </p>
                     <p>
                         <label>No. of rooms</label>
-                        <input type="text" name="no.OfRooms">
+                        <input type="number" name="numberOfRooms" id="numberOfRooms" required>
                     </p>
                     <p>
                         <label>Email</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="email">
                     </p>
                     <p>
                         <label>Phone Number</label>
-                        <input type="text" name="phone">
+                        <input type="number" name="phone" id="phone" required>
                     </p>
                     <p class="full">
                         <label>Special Requests</label>
-                        <textarea name="specialRequests" rows="5"></textarea>
+                        <textarea name="specialRequests" rows="5" id="message"></textarea>
                     </p>
                     <p class="full">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </p>
                 </form>
             </div>
         </div>
     </div>
     <div class="homebutton animated bounceInLeft">
-        <a href="main.html"><button>Back to home</button></a>
+        <a href="index.html"><button>Back to home</button></a>
     </div>
-    
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main.js"> </script>
 </body>
 </html>
