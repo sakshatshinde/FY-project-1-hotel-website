@@ -238,8 +238,9 @@ nav a:focus {
 
 .home-hero {
     background-image: url(../assets/partnersheader.png);
-    background-size: 90%;
-    background-position: left;
+    background-size: fill;
+    background-position: center;
+    background-repeat: 0;
     padding: 10em 0;
     color: #fff;
 }
