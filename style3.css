@@ -9,16 +9,20 @@ url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 *{
     box-sizing: border-box;
     transition: all ease-in-out 250ms;
+    font-family: 'Raleway',sans-serif;
+    font-size: 1em;
 }
-
+header{
+    background-color: #80FF00;
+}
 body{
     margin:0;
     font-family: 'Raleway',sans-serif;
     text-align: center;
 }
 
-img{
-    max-width: 25%;
+*img{
+    max-width: 45%;
     height: auto;
     margin-top: 0.5rem;
 }
